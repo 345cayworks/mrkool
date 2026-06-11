@@ -1,7 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <polygon points="24,46 13,22 35,22" fill="#FFC93C"/>
-  <polygon points="24,46 13,22 24,22" fill="#EBB02D"/>
-  <circle cx="17" cy="17" r="8" fill="#D62828"/>
-  <circle cx="31" cy="17" r="8" fill="#1E88D2"/>
-  <circle cx="24" cy="11" r="8" fill="#3FA644"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Brand-blue tile so the mark stays legible on light and dark tabs -->
+  <rect width="64" height="64" rx="14" fill="#1E88D2"/>
+  <defs>
+    <clipPath id="scoop">
+      <path d="M15 31 A17 17 0 0 1 49 31 Z"/>
+    </clipPath>
+  </defs>
+  <!-- White paper cone, like the logo's snow cones -->
+  <path d="M16.5 31 L32 59 L47.5 31 Z" fill="#ffffff"/>
+  <path d="M32 31 L32 59 L47.5 31 Z" fill="#e9e9e9"/>
+  <!-- Rainbow shaved-ice dome (blue/yellow/red, from the logo's center cone) -->
+  <g clip-path="url(#scoop)">
+    <rect x="13" y="12" width="13" height="20" fill="#1E88D2"/>
+    <rect x="26" y="12" width="12" height="20" fill="#FFC93C"/>
+    <rect x="38" y="12" width="13" height="20" fill="#D62828"/>
+  </g>
+  <path d="M15 31 A17 17 0 0 1 49 31" fill="none" stroke="#ffffff" stroke-width="2.5"/>
 </svg>
