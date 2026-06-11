@@ -170,15 +170,16 @@ a { color: var(--blue); }
 
 .brand svg { flex-shrink: 0; }
 
+/* wordmark colors follow the logo: "MR" red, "KOOL" blue */
 .brand-name {
   font-family: var(--font-head);
   font-weight: 800;
   font-size: 1.45rem;
-  color: var(--blue-deep);
+  color: var(--red);
   letter-spacing: 0.01em;
 }
 
-.brand-name span { color: var(--red); }
+.brand-name span { color: var(--blue); }
 
 .nav-links {
   display: flex;
