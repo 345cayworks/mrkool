@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Bookings — Mr Kool Snow Cone, Ice Cream and Snack</title>
+  <meta name="description" content="Book the Mr Kool truck for your event in the Cayman Islands, or get in touch by phone, email or Instagram.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="/">
+        <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true">
+          <polygon points="24,46 13,22 35,22" fill="#FFC93C"/>
+          <polygon points="24,46 13,22 24,22" fill="#EBB02D"/>
+          <circle cx="17" cy="17" r="8" fill="#D62828"/>
+          <circle cx="31" cy="17" r="8" fill="#1E88D2"/>
+          <circle cx="24" cy="11" r="8" fill="#3FA644"/>
+        </svg>
+        <span class="brand-name">MR <span>KOOL</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services &amp; Products</a></li>
+        <li><a href="/contact/" aria-current="page">Contact</a></li>
+        <li><a class="btn btn-primary" href="#book">Book Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact &amp; Bookings</h1>
+        <p>Tell us about your event and we'll get back to you — or just call, email or DM us.</p>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z" fill="#FBF6EE"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" id="book">
+      <div class="container contact-layout">
+
+        <div class="form-card">
+          <h2>Book Mr. Kool for Your Event</h2>
+          <p>Fill in the details below and we'll confirm availability as soon as possible.</p>
+
+          <form name="event-booking" method="POST" action="/success/" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="event-booking">
+            <p class="hp-field">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Your Name <span class="req">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 345 ...">
+              </div>
+              <div class="form-field">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date">
+              </div>
+              <div class="form-field">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type">
+                  <option value="">Select an event type…</option>
+                  <option>Birthday Party</option>
+                  <option>School Event</option>
+                  <option>Corporate Event</option>
+                  <option>Community Festival</option>
+                  <option>Sports Tournament</option>
+                  <option>Church Function</option>
+                  <option>Family Gathering</option>
+                  <option>Private Celebration</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="guests">Expected Guests</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="e.g. 50">
+              </div>
+              <div class="form-field full">
+                <label for="location">Event Location</label>
+                <input type="text" id="location" name="location" placeholder="District, venue or address">
+              </div>
+              <div class="form-field full">
+                <label for="message">Tell us about your event</label>
+                <textarea id="message" name="message" placeholder="Times, treats you'd like on the menu, anything else we should know…"></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Send Booking Request</button>
+            </div>
+            <p class="form-fineprint">We typically reply within one business day. For urgent bookings, call us directly.</p>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="info-card">
+            <h3>Reach us directly</h3>
+            <ul class="info-list">
+              <li>
+                <span class="bullet">📞</span>
+                <span><a href="tel:+13459393761">+1 345 939 3761</a><small>Primary line</small></span>
+              </li>
+              <li>
+                <span class="bullet">📞</span>
+                <span><a href="tel:+13459270176">+1 345 927 0176</a><small>Second line</small></span>
+              </li>
+              <li>
+                <span class="bullet">✉️</span>
+                <span><a href="mailto:snowsnacks@gmail.com">snowsnacks@gmail.com</a><small>Bookings &amp; enquiries</small></span>
+              </li>
+              <li>
+                <span class="bullet">📸</span>
+                <span><a href="https://www.instagram.com/mr.koolsnowcone" target="_blank" rel="noopener">@mr.koolsnowcone</a><small>See where the truck is next</small></span>
+              </li>
+              <li>
+                <span class="bullet">📍</span>
+                <span>Serving the Cayman Islands<small>Mobile — island-wide</small></span>
+              </li>
+            </ul>
+          </div>
+          <div class="logo-card">
+            <img src="https://d33wubrfki0l68.cloudfront.net/b69bec66-8672-4ef4-9228-d12f567a9259/MR%20KOOL%20LOGO%20UPDATED.jpg"
+                 alt="Mr Kool Snow Cone, Ice Cream and Snack logo"
+                 loading="lazy"
+                 onerror="this.closest('.logo-card').style.display='none'">
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-name">MR <span>KOOL</span></span>
+          <p style="margin-top:0.6rem;">Mobile snow cone, ice cream and snack truck — serving the Cayman Islands, island-wide.</p>
+          <p class="footer-tagline">Cool Treats • Tropical Flavors • Cayman Fun</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services/">Services &amp; Products</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/contact/#book">Book the Truck</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+13459393761">+1 345 939 3761</a></li>
+            <li><a href="tel:+13459270176">+1 345 927 0176</a></li>
+            <li><a href="mailto:snowsnacks@gmail.com">snowsnacks@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/mr.koolsnowcone" target="_blank" rel="noopener">Instagram — @mr.koolsnowcone</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Mr Kool Snow Cone, Ice Cream and Snack. All rights reserved.</span>
+        <span>Serving the Cayman Islands — island-wide</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
