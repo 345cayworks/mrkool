@@ -4,7 +4,7 @@ name: Publish to GitHub Pages
 # gh-pages in sync with the development branch; GitHub deploys it on push.
 on:
   push:
-    branches: [claude/eloquent-galileo-vl6omz]
+    branches: [main, claude/eloquent-galileo-vl6omz]
   workflow_dispatch:
 
 permissions:
