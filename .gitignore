@@ -1,3 +1,11 @@
 .netlify/
 .DS_Store
 node_modules/
+
+# Local dev tooling / working files — never publish (publish dir is repo root)
+.scratch/
+.claude/launch.json
+package.json
+package-lock.json
+GUIDANCE/
+SUPPORT/
